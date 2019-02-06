@@ -1,18 +1,22 @@
-# Recon2Neo4j
+# The Protein Framework
 
-<p>The Protein Framework uses the neo4j graph platform for the integration of multiple heterogeneous biological data sources (such as protein-protein interactions, pathways, drug-target interactions, disease-gene interactions, sequence similarity relationships). The integrated network allows the biological context of disease associated genes to be explored through visualisation, and information can be retrieved using the powerful neo4j CYPHER query language.</p>
+The Protein Framework uses the neo4j graph platform for the integration of multiple heterogeneous biological data sources (such as protein-protein interactions, pathways, drug-target interactions, disease-gene interactions, sequence similarity relationships). The integrated network allows the biological context of disease associated genes to be explored through visualisation, and information can be retrieved using the powerful neo4j CYPHER query language.
 
 ## Tutorial available [here](https://www.youtube.com/embed/jld7QZ6qfXE).
 
-## How to access the EpiGeNet Framework
-The Protein Framework addresses to several categories of users:
-<ol>
-<li>General user (knowledgebase manager):</li>
-The Protein Framework can be accessed online <a href="https://diseaseknowledgebase.etriks.org/protein/browser/"> here</a>.
-	<br>A file with several Cypher query examples for the Protein Framework is available for download <a href="protein_framework_sample_queries.docx"> here</a>. These queries can be extended to accommodate specific topics of interest. <br>
+## How to access the Protein Framework
 
-	<li> Advanced biological queries:</li>
-	For more advanced biological queries and/or further exploration of the results, the Protein Framework can be interrogated directly using java and R. An example of running a simple Cypher query in the Protein Framework using directly R code (via the <a href="https://cran.r-project.org/web/packages/RNeo4j/index.html">RNeo4j</a> library): download it <a href="clustering_protein_network.R">here</a>. <br>
+The Protein Framework addresses to several categories of users:
+
+### General user (knowledgebase manager):
+
+The Protein Framework can be accessed online <a href="https://diseaseknowledgebase.etriks.org/protein/browser/"> here</a>.
+
+A file with several Cypher query examples for the Protein Framework is available for download <a href="https://github.com/ibalaur/ProteinFramework/tree/master/sample%20queries">here</a>. These queries can be extended to accommodate specific topics of interest.
+
+### Advanced biological queries:
+	
+For more advanced biological queries and/or further exploration of the results, the Protein Framework can be interrogated directly using java and R. An example of running a simple Cypher query in the Protein Framework using directly R code (via the <a href="https://cran.r-project.org/web/packages/RNeo4j/index.html">RNeo4j</a> library) is available <a href="https://github.com/ibalaur/ProteinFramework/tree/master/scripts">here</a>. <br>
 
 ### For developers
 
