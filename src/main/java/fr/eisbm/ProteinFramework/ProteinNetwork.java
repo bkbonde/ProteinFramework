@@ -1,4 +1,4 @@
-package proteinFramework;
+package fr.eisbm.ProteinFramework;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -13,8 +13,8 @@ import java.util.Map.Entry;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Relationship;
 
-import proteinFramework.EmbeddedGraph.LabelTypes;
-import proteinFramework.EmbeddedGraph.RelTypes;
+import fr.eisbm.ProteinFramework.App.LabelTypes;
+import fr.eisbm.ProteinFramework.App.RelTypes;
 
 public class ProteinNetwork {
 
@@ -720,7 +720,7 @@ public class ProteinNetwork {
 	private void createProteinNode(String strProteinId, String szUniprotId,
 			String szEnsembleTranscript, String szProteinName,
 			String szGeneSymbol, String szEnsembl) {
-		proteintMap.put(szUniprotId, EmbeddedGraph.getGraphInstance()
+		proteintMap.put(szUniprotId, App.getGraphInstance()
 				.createNode(LabelTypes.Protein));
 		proteintMap.get(szUniprotId).setProperty("ProteinId", strProteinId);
 		proteintMap.get(szUniprotId).setProperty("UniprotId", szUniprotId);
@@ -732,13 +732,13 @@ public class ProteinNetwork {
 	}
 
 	private void createDiseaseNode(String szDiseaseName) {
-		diseaseMap.put(szDiseaseName, EmbeddedGraph.getGraphInstance()
+		diseaseMap.put(szDiseaseName, App.getGraphInstance()
 				.createNode(LabelTypes.Disease));
 		diseaseMap.get(szDiseaseName).setProperty("DiseaseName", szDiseaseName);
 	}
 
 	private void createPathwayNode(String szPathwayId, String szPathwayName) {
-		pathwayMap.put(szPathwayId, EmbeddedGraph.getGraphInstance()
+		pathwayMap.put(szPathwayId, App.getGraphInstance()
 				.createNode(LabelTypes.Pathway));
 		pathwayMap.get(szPathwayId).setProperty("PathwayName", szPathwayName);
 	}
@@ -746,28 +746,28 @@ public class ProteinNetwork {
 	private void createDrugNode(String szDrugId, String szDrugName,
 			String szDrugType) {
 		drugMap.put(szDrugId,
-				EmbeddedGraph.getGraphInstance().createNode(LabelTypes.Drug));
+				App.getGraphInstance().createNode(LabelTypes.Drug));
 		drugMap.get(szDrugId).setProperty("DrugId", szDrugId);
 		drugMap.get(szDrugId).setProperty("DrugName", szDrugName);
 		drugMap.get(szDrugId).setProperty("DrugType", szDrugType);
 	}
 
 	private void createGEOStudyNode(String szGEOStudyName) {
-		GEOStudyMap.put(szGEOStudyName, EmbeddedGraph.getGraphInstance()
+		GEOStudyMap.put(szGEOStudyName, App.getGraphInstance()
 				.createNode(LabelTypes.GEOStudy));
 		GEOStudyMap.get(szGEOStudyName).setProperty("GEOStudyID",
 				szGEOStudyName);
 	}
 
 	private void createGEOComparisonNode(StringPair szPair) {
-		GEOComparisonMap.put(szPair, EmbeddedGraph.getGraphInstance()
+		GEOComparisonMap.put(szPair, App.getGraphInstance()
 				.createNode(LabelTypes.GEOComparison));
 		GEOComparisonMap.get(szPair).setProperty("GEOComparisonID",
 				szPair.getFirstString());
 	}
 
 	private void createTissueNode(String szTissueName) {
-		tissueMap.put(szTissueName, EmbeddedGraph.getGraphInstance()
+		tissueMap.put(szTissueName, App.getGraphInstance()
 				.createNode(LabelTypes.Tissue));
 		tissueMap.get(szTissueName).setProperty("TissueName", szTissueName);
 	}

@@ -1,6 +1,6 @@
-package proteinFramework;
+package fr.eisbm.ProteinFramework;
 
-import proteinFramework.EmbeddedGraph.RelTypes;
+import fr.eisbm.ProteinFramework.App.RelTypes;
 
 public class Utils {	
 	static public RelTypes convertStringToRelType(String string) {

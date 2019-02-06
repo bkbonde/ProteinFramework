@@ -1,4 +1,4 @@
-package proteinFramework;
+package fr.eisbm.ProteinFramework;
 
 public class StringPair {
 	protected final String _firstStr;
