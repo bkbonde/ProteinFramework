@@ -1,6 +1,6 @@
 # The Protein Framework
 
-The Protein Framework uses the neo4j graph platform for the integration of multiple heterogeneous biological data sources (such as protein-protein interactions, pathways, drug-target interactions, disease-gene interactions, sequence similarity relationships). The integrated network allows the biological context of disease associated genes to be explored through visualisation, and information can be retrieved using the powerful neo4j CYPHER query language.
+The Protein Framework uses the [Neo4j](https://neo4j.com/) graph platform for the integration of multiple heterogeneous biological data sources (such as protein-protein interactions, pathways, drug-target interactions, disease-gene interactions, sequence similarity relationships). The integrated network allows the biological context of disease associated genes to be explored through visualisation, and information can be retrieved using the powerful neo4j CYPHER query language.
 
 ## Tutorial available [here](https://www.youtube.com/embed/jld7QZ6qfXE).
 
@@ -46,10 +46,15 @@ Lysenko A.*, Roznovat I.A.*, Saqi M.*, Mazein A., Rawlings C.J. and Auffray C. (
 ## Contributors
 
 Irina Balaur (Roznovat), [EISBM](http://www.eisbm.org/), Lyon, France - specified the translation rules, developed the code
+
 Artem Lysenko, [Rothamsted Research](https://www.rothamsted.ac.uk/), Hertfordshire, UK - advice on the Neo4j functionality
+
 Alexander Mazein, [EISBM](http://www.eisbm.org/), Lyon, France - idea, advice on the translation rules
+
 Mansoor Saqi, [EISBM](http://www.eisbm.org/), Lyon, France - advice on the translation rules
+
 Chris J. Rawlings, [Rothamsted Research](https://www.rothamsted.ac.uk/), Hertfordshire, UK - advice on the Neo4j functionality
+
 Charles Auffray, [EISBM](http://www.eisbm.org/), Lyon, France - strategic advice  
 
 ## Useful links
